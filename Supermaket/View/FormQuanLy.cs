@@ -43,7 +43,7 @@ namespace Supermaket.View
         private void FormQuanLy_Load(object sender, EventArgs e)
         {
             titleHoaDon.Checked = true;
-            titleHoaDon_Click(sender,e);
+            AddControls(new FormHoaDonView());
         }
 
     }

@@ -38,11 +38,12 @@ namespace Supermaket.View.Kho
             DataTable dt = new DataTable();
             ad.Fill(dt);
             data.Rows.Clear();
-            data.Columns[0].Width = 50;
+            
             foreach (DataRow row in dt.Rows)
             {
                 data.Rows.Add(row["STT"], row["TENSP"], row["IDSP"], row["MABAR"] ,row["MoTa"], row["TENNCC"], row["TENDM"], row["SOLUONGTON"], row["NGAYSX"], row["NGAYHH"], row["HINHANH"],row["BARCODE"]);
             }
+            data.Columns[0].Width = 50;
             data.Columns[8].DefaultCellStyle.Format = "dd-MM-yyyy";
             data.Columns[9].DefaultCellStyle.Format = "dd-MM-yyyy";
             data.AllowUserToAddRows = false;

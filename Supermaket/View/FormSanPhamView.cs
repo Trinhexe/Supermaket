@@ -43,7 +43,7 @@ namespace Supermaket.View
         private void FormSanPhamView_Load(object sender, EventArgs e)
         {
             titleSanPham1.Checked = true;
-            titleSanPham1_Click(sender, e);
+            AddControls(new FormSanPhamView1());
         }
     }
 }

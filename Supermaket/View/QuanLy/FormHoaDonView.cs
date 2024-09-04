@@ -29,7 +29,7 @@ namespace Supermaket.View
             ad.Fill(dt);
             data.DataSource = dt;
             data.Columns[0].HeaderText = "STT";
-            data.Columns[0].Width = 40;
+            data.Columns[0].Width = 50;
             data.Columns[1].HeaderText = "Mã hóa đơn";
             data.Columns[2].HeaderText = "Khách hàng";
             data.Columns[3].HeaderText = "Nhân viên";
