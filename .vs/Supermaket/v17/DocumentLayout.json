@@ -1,12 +1,53 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Supermaket\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|e:\\supermaket\\supermaket\\view\\sanpham\\formsanphamview1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|solutionrelative:supermaket\\view\\sanpham\\formsanphamview1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|e:\\supermaket\\supermaket\\view\\sanpham\\formsanphamview1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|solutionrelative:supermaket\\view\\sanpham\\formsanphamview1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormSanPhamView1.cs",
+              "DocumentMoniker": "E:\\Supermaket\\Supermaket\\View\\SanPham\\FormSanPhamView1.cs",
+              "RelativeDocumentMoniker": "Supermaket\\View\\SanPham\\FormSanPhamView1.cs",
+              "ToolTip": "E:\\Supermaket\\Supermaket\\View\\SanPham\\FormSanPhamView1.cs",
+              "RelativeToolTip": "Supermaket\\View\\SanPham\\FormSanPhamView1.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwCkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:14:18.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormSanPhamView1.cs [Design]",
+              "DocumentMoniker": "E:\\Supermaket\\Supermaket\\View\\SanPham\\FormSanPhamView1.cs",
+              "RelativeDocumentMoniker": "Supermaket\\View\\SanPham\\FormSanPhamView1.cs",
+              "ToolTip": "E:\\Supermaket\\Supermaket\\View\\SanPham\\FormSanPhamView1.cs [Design]",
+              "RelativeToolTip": "Supermaket\\View\\SanPham\\FormSanPhamView1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T17:14:17.235Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
