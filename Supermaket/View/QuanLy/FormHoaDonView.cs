@@ -20,7 +20,7 @@ namespace Supermaket.View
             if (connection.State == ConnectionState.Closed)
                 connection.Open();
             
-            string sql = @"select ROW_NUMBER() OVER (ORDER BY MAHD DESC) AS 'STT',MAHD,KHACHHANG.HOVATEN,NHANVIEN.HOVATEN,FORMAT(TONGTIEN, 'N0') as TONGTIEN,NGAYLAPHOADON,SĐT
+            string sql = @"select ROW_NUMBER() OVER (ORDER BY MAHD DESC) AS 'STT',MAHD,KHACHHANG.HOVATEN,NHANVIEN.HOVATEN,FORMAT(TONGTIEN, 'N0') as TONGTIEN,NGAYLAPHOADON,KHACHHANG.SĐT
                 from HOADON LEFT JOIN KHACHHANG ON KHACHHANG.MAKH = HOADON.MAKH
                             INNER JOIN NHANVIEN ON NHANVIEN.MANV = HOADON.MANV
                 WHERE "+dk;
@@ -44,7 +44,7 @@ namespace Supermaket.View
 
         private void txtTk_TextChanged(object sender, EventArgs e)
         {
-            string dk = "KHACHHANG.HOVATEN LIKE N'%" + txtTk.Text + "%' OR NHANVIEN.HOVATEN LIKE N'%" + txtTk.Text + "%' OR SĐT LIKE N'%" + txtTk.Text + "%' OR HOADON.MAHD LIKE '%" + txtTk.Text+"%'";
+            string dk = "KHACHHANG.HOVATEN LIKE N'%" + txtTk.Text + "%' OR NHANVIEN.HOVATEN LIKE N'%" + txtTk.Text + "%' OR KHACHHANG.SĐT LIKE N'%" + txtTk.Text + "%' OR HOADON.MAHD LIKE '%" + txtTk.Text+"%'";
             LoadData(dk);
         }
         private void btnLoc_Click_1(object sender, EventArgs e)

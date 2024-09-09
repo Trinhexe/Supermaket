@@ -242,3 +242,4 @@ D:\Supermaket\Supermaket\obj\Debug\Supermaket.FormLoading.resources
 D:\Supermaket\Supermaket\obj\Debug\Supermaket.View.ThungRac.FormThungRacView2.resources
 D:\Supermaket\Supermaket\obj\Debug\Supermaket.View.TrangChu.FormTKHO.resources
 D:\Supermaket\Supermaket\obj\Debug\Supermaket.View.TrangChu.FormTKSP.resources
+E:\Supermaket\Supermaket\obj\Debug\Supermaket.View.Kho.FormNhapXuat.resources

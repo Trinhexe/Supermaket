@@ -5,7 +5,6 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Supermaket.Model
 {
@@ -46,7 +45,7 @@ namespace Supermaket.Model
                     }
                     else
                     {
-                        string sql = "INSERT INTO NHANVIEN (HOVATEN, TAIKHOAN,MATKHAU, DIACHI,GIOITINH,NGAYSINH,SDT,EMAIL,MACV,TRANGTHAI) VALUES (@HOVATEN, @TAIKHOAN,@MATKHAU, @DIACHI,@GIOITINH,@NGAYSINH,@SDT,@EMAIL,@MACV,@TRANGTHAI)";
+                        string sql = "INSERT INTO NHANVIEN (HOVATEN, TAIKHOAN,MATKHAU, DIACHI,GIOITINH,NGAYSINH,SĐT,EMAIL,MACV,TRANGTHAI) VALUES (@HOVATEN, @TAIKHOAN,@MATKHAU, @DIACHI,@GIOITINH,@NGAYSINH,@SDT,@EMAIL,@MACV,@TRANGTHAI)";
                         SqlCommand cmd = new SqlCommand(sql, connection);
                         cmd.Parameters.AddWithValue("@HOVATEN", txtHoTennv.Text);
                         cmd.Parameters.AddWithValue("@TAIKHOAN", txtTK.Text);
@@ -98,9 +97,9 @@ namespace Supermaket.Model
                     {
                         MessageBox.Show("Không được để trống thông tin nhân viên", "Thông báo", MessageBoxButtons.OK);
                     }
-                    else /*if(CheckGmail(txtgmailnv.Text) == true && CheckTK(txtTK.Text) == true && CheckSDT(txtSDTnv.Text) == true)*/
+                    else 
                     {
-                        string sql = "UPDATE NHANVIEN SET HOVATEN = @HOVATEN, TAIKHOAN=@TAIKHOAN,MATKHAU=@MATKHAU, DIACHI=@DIACHI,GIOITINH=@GIOITINH,NGAYSINH=@NGAYSINH,SDT=@SDT,EMAIL=@EMAIL,MACV=@MACV WHERE MANV = @MANV";
+                        string sql = "UPDATE NHANVIEN SET HOVATEN = @HOVATEN, TAIKHOAN=@TAIKHOAN,MATKHAU=@MATKHAU, DIACHI=@DIACHI,GIOITINH=@GIOITINH,NGAYSINH=@NGAYSINH,SĐT=@SDT,EMAIL=@EMAIL,MACV=@MACV WHERE MANV = @MANV";
                         using (SqlCommand cmd = new SqlCommand(sql, connection))
                         {
                             cmd.Parameters.AddWithValue("@MANV", id);
@@ -156,44 +155,6 @@ namespace Supermaket.Model
             }
             return ktr;
         }
-        private bool CheckSDT(string sdt)
-        {
-            bool ktr = true;
-            if (connection.State == ConnectionState.Closed)
-                connection.Open();
-            string sql = @"SELECT SDT FROM NHANVIEN";
-            SqlDataAdapter ad = new SqlDataAdapter(sql, connection);
-            DataTable dt = new DataTable();
-            ad.Fill(dt);
-            foreach (DataRow row in dt.Rows)
-            {
-                checkloilist.Add(row["SDT"].ToString());
-            }
-            if (checkloilist.Contains(sdt))
-            {
-                ktr = false;
-            }
-            return ktr;
-        }
-        private bool CheckGmail(string gmail)
-        {
-            bool ktr = true;
-            if (connection.State == ConnectionState.Closed)
-                connection.Open();
-            string sql = @"SELECT EMAIL FROM NHANVIEN";
-            SqlDataAdapter ad = new SqlDataAdapter(sql, connection);
-            DataTable dt = new DataTable();
-            ad.Fill(dt);
-            foreach (DataRow row in dt.Rows)
-            {
-                checkloilist.Add(row["EMAIL"].ToString());
-            }
-            if (checkloilist.Contains(gmail))
-            {
-                ktr = false;
-            }
-            return ktr;
-        }
         private void FormNhanVienAdd_Load(object sender, EventArgs e)
         {
             if (id == 0)
@@ -224,7 +185,7 @@ namespace Supermaket.Model
         private void txtSDTnv_TextChanged(object sender, EventArgs e)
         {
             string input = txtSDTnv.Text;
-            if (input.Length > 11) // check length
+            if (input.Length > 11) 
             {
                 MessageBox.Show("SĐT không được nhập quá 11 số.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtSDTnv.ResetText();
@@ -241,7 +202,7 @@ namespace Supermaket.Model
             }
             if (id == 0)
             {
-                if (CheckSDT(txtSDTnv.Text) == false)
+                if (CheckDuLieu.CheckSDT(txtSDTnv.Text, "SELECT SĐT FROM NHANVIEN") == false)
                 {
                     MessageBox.Show("Số điện thoại đã có vui lòng nhập lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtSDTnv.ResetText();
@@ -316,7 +277,7 @@ namespace Supermaket.Model
             {
                 if (sdt != txtSDTnv.Text)
                 {
-                    if (CheckSDT(txtSDTnv.Text) == false)
+                    if (CheckDuLieu.CheckSDT(txtSDTnv.Text, "SELECT SĐT FROM NHANVIEN") == false)
                     {
                         MessageBox.Show("Số điện thoại đã có vui lòng nhập lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         txtSDTnv.Text = sdt.ToString();
@@ -331,7 +292,7 @@ namespace Supermaket.Model
             {
                 if (gmail != txtgmailnv.Text)
                 {
-                    if (CheckGmail(txtgmailnv.Text) == false)
+                    if (CheckDuLieu.CheckGmail(txtgmailnv.Text, "SELECT EMAIL FROM NHANVIEN") == false)
                     {
                         MessageBox.Show("Gmail đã có vui lòng nhập lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         txtgmailnv.Text = gmail.ToString();
@@ -346,7 +307,7 @@ namespace Supermaket.Model
             {
                 if (gmail != txtgmailnv.Text)
                 {
-                    if (CheckGmail(txtgmailnv.Text) == false)
+                    if (CheckDuLieu.CheckGmail(txtgmailnv.Text, "SELECT EMAIL FROM NHANVIEN") == false)
                     {
                         MessageBox.Show("Gmail đã có vui lòng nhập lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         txtgmailnv.ResetText();

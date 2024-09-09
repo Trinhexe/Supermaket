@@ -27,7 +27,7 @@ namespace Supermaket.View
 
         private void btnNhap_Click(object sender, EventArgs e)
         {
-            AddControls(new FormNhapHang());
+            AddControls(new FormNhapXuat());
         }
 
         private void btnXuat_Click(object sender, EventArgs e)
@@ -47,8 +47,8 @@ namespace Supermaket.View
 
         private void FormKhoView_Load(object sender, EventArgs e)
         {
-            btnHDnhap.Checked = true;
-            AddControls(new FormHoaDonNhapHang());
+            btnNhap.Checked = true;
+            AddControls(new FormNhapXuat());
         }
     }
 }

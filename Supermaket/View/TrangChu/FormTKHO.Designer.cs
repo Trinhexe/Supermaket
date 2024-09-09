@@ -46,6 +46,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.chartNhap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartXuat)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -194,6 +196,14 @@
             this.timer1.Interval = 900;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.guna2Panel2;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.guna2Panel3;
+            // 
             // FormTKHO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -232,5 +242,7 @@
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private System.Windows.Forms.Timer timer1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
     }
 }

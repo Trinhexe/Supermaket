@@ -124,46 +124,6 @@ namespace Supermaket.Model
             }
        
         }
-        private List<string> checkloilist = new List<string>();
-        private bool CheckSDT(string sdt)
-        {
-            bool ktr = true;
-            if (connection.State == ConnectionState.Closed)
-                connection.Open();
-            string sql = @"SELECT SĐT FROM KHACHHANG";
-            SqlDataAdapter ad = new SqlDataAdapter(sql, connection);
-            DataTable dt = new DataTable();
-            ad.Fill(dt);
-            foreach (DataRow row in dt.Rows)
-            {
-                checkloilist.Add(row["SĐT"].ToString());
-            }
-            if (checkloilist.Contains(sdt))
-            {
-                ktr = false;
-            }
-            return ktr;
-        }
-        private bool CheckGmail(string gmail)
-        {
-            bool ktr = true;
-            if (connection.State == ConnectionState.Closed)
-                connection.Open();
-            string sql = @"SELECT EMAIL FROM KHACHHANG";
-            SqlDataAdapter ad = new SqlDataAdapter(sql, connection);
-            DataTable dt = new DataTable();
-            ad.Fill(dt);
-            foreach (DataRow row in dt.Rows)
-            {
-                checkloilist.Add(row["EMAIL"].ToString());
-            }
-            if (checkloilist.Contains(gmail))
-            {
-                ktr = false;
-            }
-            return ktr;
-        }
-
 
         private void btnDong_Click(object sender, EventArgs e)
         {
@@ -191,7 +151,7 @@ namespace Supermaket.Model
             }
             if(id ==0)
             {
-                if (CheckSDT(txtSDT.Text) == false)
+                if (CheckDuLieu.CheckSDT(txtSDT.Text, "SELECT SĐT FROM KHACHHANG") == false)
                 {
                     MessageBox.Show("Số điện thoại đã có vui lòng nhập lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtSDT.ResetText();
@@ -228,7 +188,7 @@ namespace Supermaket.Model
         {
             if(id > 0)
             {
-                if (CheckSDT(txtSDT.Text) == false)
+                if (CheckDuLieu.CheckSDT(txtSDT.Text, "SELECT SĐT FROM KHACHHANG") == false)
                 {
                     MessageBox.Show("Số điện thoại đã có vui lòng nhập lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtSDT.Text = sdt.ToString();
@@ -240,7 +200,7 @@ namespace Supermaket.Model
         {
             if (id == 0)
             {
-                if (CheckGmail(txtgmail.Text) == false)
+                if (CheckDuLieu.CheckGmail(txtgmail.Text, "SELECT EMAIL FROM KHACHHANG") == false)
                 {
                     MessageBox.Show("Gmail đã có vui lòng nhập lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtgmail.ResetText();
@@ -259,7 +219,7 @@ namespace Supermaket.Model
             }
             if (id > 0)
             {
-                if (CheckGmail(txtgmail.Text) == false)
+                if (CheckDuLieu.CheckGmail(txtgmail.Text, "SELECT EMAIL FROM KHACHHANG") == false)
                 {
                     MessageBox.Show("Gmail đã có vui lòng nhập lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtgmail.Text = gmail.ToString();

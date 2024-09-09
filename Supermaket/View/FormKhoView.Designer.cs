@@ -31,7 +31,6 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnHDxuat = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnHDnhap = new Guna.UI2.WinForms.Guna2TileButton();
-            this.btnXuat = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnNhap = new Guna.UI2.WinForms.Guna2TileButton();
             this.CenterPannel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
@@ -43,7 +42,6 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2Panel1.Controls.Add(this.btnHDxuat);
             this.guna2Panel1.Controls.Add(this.btnHDnhap);
-            this.guna2Panel1.Controls.Add(this.btnXuat);
             this.guna2Panel1.Controls.Add(this.btnNhap);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(222)))), ((int)(((byte)(255)))));
             this.guna2Panel1.Location = new System.Drawing.Point(12, 12);
@@ -97,29 +95,6 @@
             this.btnHDnhap.Text = "Hóa đơn nhập";
             this.btnHDnhap.Click += new System.EventHandler(this.btnHDnhap_Click);
             // 
-            // btnXuat
-            // 
-            this.btnXuat.BackColor = System.Drawing.Color.Transparent;
-            this.btnXuat.BorderRadius = 10;
-            this.btnXuat.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnXuat.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(65)))), ((int)(((byte)(128)))));
-            this.btnXuat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnXuat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnXuat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXuat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnXuat.FillColor = System.Drawing.Color.DodgerBlue;
-            this.btnXuat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXuat.ForeColor = System.Drawing.Color.White;
-            this.btnXuat.Image = global::Supermaket.Properties.Resources.export;
-            this.btnXuat.ImageOffset = new System.Drawing.Point(0, 10);
-            this.btnXuat.ImageSize = new System.Drawing.Size(46, 46);
-            this.btnXuat.Location = new System.Drawing.Point(114, 48);
-            this.btnXuat.Name = "btnXuat";
-            this.btnXuat.Size = new System.Drawing.Size(93, 80);
-            this.btnXuat.TabIndex = 2;
-            this.btnXuat.Text = "Xuất";
-            this.btnXuat.Click += new System.EventHandler(this.btnXuat_Click);
-            // 
             // btnNhap
             // 
             this.btnNhap.BackColor = System.Drawing.Color.Transparent;
@@ -138,9 +113,9 @@
             this.btnNhap.ImageSize = new System.Drawing.Size(50, 50);
             this.btnNhap.Location = new System.Drawing.Point(15, 48);
             this.btnNhap.Name = "btnNhap";
-            this.btnNhap.Size = new System.Drawing.Size(93, 80);
+            this.btnNhap.Size = new System.Drawing.Size(192, 80);
             this.btnNhap.TabIndex = 1;
-            this.btnNhap.Text = "Nhập ";
+            this.btnNhap.Text = "Nhập/Xuất";
             this.btnNhap.Click += new System.EventHandler(this.btnNhap_Click);
             // 
             // CenterPannel
@@ -173,7 +148,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2TileButton btnNhap;
         private Guna.UI2.WinForms.Guna2Panel CenterPannel;
-        private Guna.UI2.WinForms.Guna2TileButton btnXuat;
         private Guna.UI2.WinForms.Guna2TileButton btnHDxuat;
         private Guna.UI2.WinForms.Guna2TileButton btnHDnhap;
     }
