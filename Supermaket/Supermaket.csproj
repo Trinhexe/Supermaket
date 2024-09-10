@@ -242,12 +242,6 @@
     <Compile Include="View\FormChiTietSP.Designer.cs">
       <DependentUpon>FormChiTietSP.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Kho\FormNhapXuat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Kho\FormNhapXuat.Designer.cs">
-      <DependentUpon>FormNhapXuat.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Kho\NhapHang\FormCTNH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -467,9 +461,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormChiTietSP.resx">
       <DependentUpon>FormChiTietSP.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Kho\FormNhapXuat.resx">
-      <DependentUpon>FormNhapXuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Kho\NhapHang\FormCTNH.resx">
       <DependentUpon>FormCTNH.cs</DependentUpon>

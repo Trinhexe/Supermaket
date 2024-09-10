@@ -26,7 +26,7 @@ namespace Supermaket.View.Kho
             if (connection.State == ConnectionState.Closed)
                 connection.Open();
 
-            string sql = @"select ROW_NUMBER() OVER (ORDER BY MAXUATHANG DESC) AS 'STT',MAXUATHANG,NHANVIEN.HOVATEN,SDT,KHACHHANG.HOVATEN,SĐT,FORMAT(TONGTIEN, 'N0') + ' VND' as TONGTIEN,NGAYXUAT
+            string sql = @"select ROW_NUMBER() OVER (ORDER BY MAXUATHANG DESC) AS 'STT',MAXUATHANG,NHANVIEN.HOVATEN,SDT,KHACHHANG.HOVATEN,KHACHHANG.SĐT,FORMAT(TONGTIEN, 'N0') + ' VND' as TONGTIEN,NGAYXUAT
                 FROM HDXUATHANG INNER JOIN NHANVIEN ON NHANVIEN.MANV = HDXUATHANG.MANV
                                 LEFT JOIN KHACHHANG ON KHACHHANG.MAKH = HDXUATHANG.MAKH
                 WHERE "+dk;

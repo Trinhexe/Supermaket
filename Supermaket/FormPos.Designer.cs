@@ -38,6 +38,15 @@
             this.NCCGroup = new Guna.UI2.WinForms.Guna2GroupBox();
             this.NCCPannel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.data = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dgvSr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvIdSp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvMabar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvslton = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvSl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvTong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvDel = new System.Windows.Forms.DataGridViewImageColumn();
             this.btnDon = new Guna.UI2.WinForms.Guna2Button();
             this.btnThanhToan = new Guna.UI2.WinForms.Guna2Button();
             this.txtTong = new Guna.UI2.WinForms.Guna2TextBox();
@@ -53,15 +62,6 @@
             this.btnBatdau = new Guna.UI2.WinForms.Guna2Button();
             this.btnKetThuc = new Guna.UI2.WinForms.Guna2Button();
             this.txtKetQua = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dgvSr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvIdSp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvMabar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvslton = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvSl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvTong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvDel = new System.Windows.Forms.DataGridViewImageColumn();
             this.DanhMucGroup.SuspendLayout();
             this.NCCGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.data)).BeginInit();
@@ -189,6 +189,79 @@
             this.data.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_CellClick);
             this.data.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.data_CellFormatting);
             this.data.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_CellValueChanged);
+            // 
+            // dgvSr
+            // 
+            this.dgvSr.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvSr.FillWeight = 80F;
+            this.dgvSr.HeaderText = "STT";
+            this.dgvSr.MinimumWidth = 6;
+            this.dgvSr.Name = "dgvSr";
+            this.dgvSr.ReadOnly = true;
+            this.dgvSr.Width = 60;
+            // 
+            // dgvIdSp
+            // 
+            this.dgvIdSp.FillWeight = 60F;
+            this.dgvIdSp.HeaderText = "IDSP";
+            this.dgvIdSp.MinimumWidth = 6;
+            this.dgvIdSp.Name = "dgvIdSp";
+            this.dgvIdSp.ReadOnly = true;
+            // 
+            // dgvMabar
+            // 
+            this.dgvMabar.HeaderText = "mabar";
+            this.dgvMabar.Name = "dgvMabar";
+            this.dgvMabar.Visible = false;
+            // 
+            // dgvslton
+            // 
+            this.dgvslton.HeaderText = "slton";
+            this.dgvslton.Name = "dgvslton";
+            this.dgvslton.Visible = false;
+            // 
+            // dgvTen
+            // 
+            this.dgvTen.HeaderText = "Tên";
+            this.dgvTen.MinimumWidth = 6;
+            this.dgvTen.Name = "dgvTen";
+            this.dgvTen.ReadOnly = true;
+            // 
+            // dgvGia
+            // 
+            this.dgvGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvGia.FillWeight = 70F;
+            this.dgvGia.HeaderText = "Giá";
+            this.dgvGia.MinimumWidth = 70;
+            this.dgvGia.Name = "dgvGia";
+            this.dgvGia.ReadOnly = true;
+            this.dgvGia.Width = 70;
+            // 
+            // dgvSl
+            // 
+            this.dgvSl.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvSl.FillWeight = 70F;
+            this.dgvSl.HeaderText = "SL";
+            this.dgvSl.MinimumWidth = 70;
+            this.dgvSl.Name = "dgvSl";
+            this.dgvSl.Width = 70;
+            // 
+            // dgvTong
+            // 
+            this.dgvTong.FillWeight = 50F;
+            this.dgvTong.HeaderText = "Tổng";
+            this.dgvTong.MinimumWidth = 50;
+            this.dgvTong.Name = "dgvTong";
+            // 
+            // dgvDel
+            // 
+            this.dgvDel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvDel.FillWeight = 50F;
+            this.dgvDel.HeaderText = "";
+            this.dgvDel.Image = global::Supermaket.Properties.Resources.dustbin__3_;
+            this.dgvDel.MinimumWidth = 50;
+            this.dgvDel.Name = "dgvDel";
+            this.dgvDel.Width = 50;
             // 
             // btnDon
             // 
@@ -450,79 +523,6 @@
             this.txtKetQua.Size = new System.Drawing.Size(224, 42);
             this.txtKetQua.TabIndex = 14;
             this.txtKetQua.Visible = false;
-            // 
-            // dgvSr
-            // 
-            this.dgvSr.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvSr.FillWeight = 80F;
-            this.dgvSr.HeaderText = "STT";
-            this.dgvSr.MinimumWidth = 6;
-            this.dgvSr.Name = "dgvSr";
-            this.dgvSr.ReadOnly = true;
-            this.dgvSr.Width = 60;
-            // 
-            // dgvIdSp
-            // 
-            this.dgvIdSp.FillWeight = 60F;
-            this.dgvIdSp.HeaderText = "IDSP";
-            this.dgvIdSp.MinimumWidth = 6;
-            this.dgvIdSp.Name = "dgvIdSp";
-            this.dgvIdSp.ReadOnly = true;
-            // 
-            // dgvMabar
-            // 
-            this.dgvMabar.HeaderText = "mabar";
-            this.dgvMabar.Name = "dgvMabar";
-            this.dgvMabar.Visible = false;
-            // 
-            // dgvslton
-            // 
-            this.dgvslton.HeaderText = "slton";
-            this.dgvslton.Name = "dgvslton";
-            this.dgvslton.Visible = false;
-            // 
-            // dgvTen
-            // 
-            this.dgvTen.HeaderText = "Tên";
-            this.dgvTen.MinimumWidth = 6;
-            this.dgvTen.Name = "dgvTen";
-            this.dgvTen.ReadOnly = true;
-            // 
-            // dgvGia
-            // 
-            this.dgvGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvGia.FillWeight = 70F;
-            this.dgvGia.HeaderText = "Giá";
-            this.dgvGia.MinimumWidth = 70;
-            this.dgvGia.Name = "dgvGia";
-            this.dgvGia.ReadOnly = true;
-            this.dgvGia.Width = 70;
-            // 
-            // dgvSl
-            // 
-            this.dgvSl.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvSl.FillWeight = 70F;
-            this.dgvSl.HeaderText = "SL";
-            this.dgvSl.MinimumWidth = 70;
-            this.dgvSl.Name = "dgvSl";
-            this.dgvSl.Width = 70;
-            // 
-            // dgvTong
-            // 
-            this.dgvTong.FillWeight = 50F;
-            this.dgvTong.HeaderText = "Tổng";
-            this.dgvTong.MinimumWidth = 50;
-            this.dgvTong.Name = "dgvTong";
-            // 
-            // dgvDel
-            // 
-            this.dgvDel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvDel.FillWeight = 50F;
-            this.dgvDel.HeaderText = "";
-            this.dgvDel.Image = global::Supermaket.Properties.Resources.dustbin__3_;
-            this.dgvDel.MinimumWidth = 50;
-            this.dgvDel.Name = "dgvDel";
-            this.dgvDel.Width = 50;
             // 
             // FormPos
             // 

@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Supermaket.View.Kho;
+using System;
 using System.Windows.Forms;
-using Supermaket.View.Kho;
 namespace Supermaket.View
 {
     public partial class FormKhoView : Mau
@@ -25,16 +18,6 @@ namespace Supermaket.View
             f.Show();
         }
 
-        private void btnNhap_Click(object sender, EventArgs e)
-        {
-            AddControls(new FormNhapXuat());
-        }
-
-        private void btnXuat_Click(object sender, EventArgs e)
-        {
-            AddControls(new FormXuatHang());
-        }
-
         private void btnHDnhap_Click(object sender, EventArgs e)
         {
             AddControls(new FormHoaDonNhapHang());
@@ -47,8 +30,18 @@ namespace Supermaket.View
 
         private void FormKhoView_Load(object sender, EventArgs e)
         {
-            btnNhap.Checked = true;
-            AddControls(new FormNhapXuat());
+            btnHDnhap.Checked = true;
+            btnHDnhap_Click(sender, e);
+        }
+
+        private void btnNhap_Click_1(object sender, EventArgs e)
+        {
+            AddControls(new FormNhapHang());
+        }
+
+        private void btnXuat_Click_1(object sender, EventArgs e)
+        {
+            AddControls(new FormXuatHang());
         }
     }
 }
