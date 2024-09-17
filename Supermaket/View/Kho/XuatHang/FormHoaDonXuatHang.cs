@@ -26,7 +26,7 @@ namespace Supermaket.View.Kho
             if (connection.State == ConnectionState.Closed)
                 connection.Open();
 
-            string sql = @"select ROW_NUMBER() OVER (ORDER BY MAXUATHANG DESC) AS 'STT',MAXUATHANG,NHANVIEN.HOVATEN,SDT,KHACHHANG.HOVATEN,KHACHHANG.SĐT,FORMAT(TONGTIEN, 'N0') + ' VND' as TONGTIEN,NGAYXUAT
+            string sql = @"select ROW_NUMBER() OVER (ORDER BY MAXUATHANG DESC) AS 'STT',MAXUATHANG,NHANVIEN.HOVATEN,NHANVIEN.SĐT,KHACHHANG.HOVATEN,KHACHHANG.SĐT,FORMAT(TONGTIEN, 'N0') + ' VND' as TONGTIEN,NGAYXUAT
                 FROM HDXUATHANG INNER JOIN NHANVIEN ON NHANVIEN.MANV = HDXUATHANG.MANV
                                 LEFT JOIN KHACHHANG ON KHACHHANG.MAKH = HDXUATHANG.MAKH
                 WHERE "+dk;
@@ -55,7 +55,7 @@ namespace Supermaket.View.Kho
         }
         private void txtTk_TextChanged(object sender, EventArgs e)
         {
-            string dk = "NHANVIEN.HOVATEN LIKE N'%" + txtTk.Text + "%' OR MAXUATHANG LIKE '%" + txtTk.Text + "%' OR SDT LIKE '%" + txtTk.Text + "%'";
+            string dk = "NHANVIEN.HOVATEN LIKE N'%" + txtTk.Text + "%' OR MAXUATHANG LIKE '%" + txtTk.Text + "%' OR SĐT LIKE '%" + txtTk.Text + "%'";
             LoadData(dk);
         }
 

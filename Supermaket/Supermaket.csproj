@@ -16,14 +16,15 @@
     <PublishUrl>E:\CaiDat\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>11</ApplicationRevision>
+    <UpdateUrl>http://localhost/Supermaket/</UpdateUrl>
+    <ApplicationRevision>12</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -213,6 +214,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportBaoCao\DataHD.cs">
+      <DependentUpon>DataHD.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ReportBaoCao\HoaDonBanHang.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -349,6 +353,18 @@
     </Compile>
     <Compile Include="View\FormThungRac.Designer.cs">
       <DependentUpon>FormThungRac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ThongBao\FormThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ThongBao\FormThongBao.Designer.cs">
+      <DependentUpon>FormThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ThongBao\UserTB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ThongBao\UserTB.Designer.cs">
+      <DependentUpon>UserTB.cs</DependentUpon>
     </Compile>
     <Compile Include="View\ThungRac\FormThungRacView1.cs">
       <SubType>Form</SubType>
@@ -516,6 +532,12 @@
     <EmbeddedResource Include="View\FormThungRac.resx">
       <DependentUpon>FormThungRac.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\ThongBao\FormThongBao.resx">
+      <DependentUpon>FormThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ThongBao\UserTB.resx">
+      <DependentUpon>UserTB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\ThungRac\FormThungRacView1.resx">
       <DependentUpon>FormThungRacView1.cs</DependentUpon>
     </EmbeddedResource>
@@ -599,6 +621,7 @@
     <None Include="Resources\download_106249681.png" />
     <None Include="Resources\filter.png" />
     <None Include="Resources\data-warehouse.png" />
+    <None Include="Resources\bell.png" />
     <Content Include="Resources\icons8-checkout-100.png" />
     <None Include="Resources\icons8-payment-48.png" />
     <None Include="Resources\icons8-checkout-1001.png" />

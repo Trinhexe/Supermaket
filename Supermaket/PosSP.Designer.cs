@@ -33,9 +33,10 @@
             this.txtgiasp = new System.Windows.Forms.Label();
             this.btnChiTiet = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.btnUserCtrPercent = new System.Windows.Forms.Button();
             this.txtgiakm = new System.Windows.Forms.Label();
             this.picsp = new System.Windows.Forms.PictureBox();
-            this.btnUserCtrPercent = new System.Windows.Forms.Button();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picsp)).BeginInit();
             this.SuspendLayout();
@@ -81,6 +82,7 @@
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.guna2Separator1);
             this.guna2ShadowPanel1.Controls.Add(this.btnUserCtrPercent);
             this.guna2ShadowPanel1.Controls.Add(this.txtgiakm);
             this.guna2ShadowPanel1.Controls.Add(this.picsp);
@@ -93,6 +95,24 @@
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(250, 414);
             this.guna2ShadowPanel1.TabIndex = 5;
+            // 
+            // btnUserCtrPercent
+            // 
+            this.btnUserCtrPercent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUserCtrPercent.BackColor = System.Drawing.Color.Red;
+            this.btnUserCtrPercent.FlatAppearance.BorderSize = 0;
+            this.btnUserCtrPercent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUserCtrPercent.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnUserCtrPercent.ForeColor = System.Drawing.Color.White;
+            this.btnUserCtrPercent.Image = ((System.Drawing.Image)(resources.GetObject("btnUserCtrPercent.Image")));
+            this.btnUserCtrPercent.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnUserCtrPercent.Location = new System.Drawing.Point(179, 195);
+            this.btnUserCtrPercent.Name = "btnUserCtrPercent";
+            this.btnUserCtrPercent.Size = new System.Drawing.Size(55, 35);
+            this.btnUserCtrPercent.TabIndex = 6;
+            this.btnUserCtrPercent.Text = "00";
+            this.btnUserCtrPercent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnUserCtrPercent.UseVisualStyleBackColor = false;
             // 
             // txtgiakm
             // 
@@ -115,23 +135,15 @@
             this.picsp.TabStop = false;
             this.picsp.Click += new System.EventHandler(this.picsp_Click);
             // 
-            // btnUserCtrPercent
+            // guna2Separator1
             // 
-            this.btnUserCtrPercent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUserCtrPercent.BackColor = System.Drawing.Color.Red;
-            this.btnUserCtrPercent.FlatAppearance.BorderSize = 0;
-            this.btnUserCtrPercent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUserCtrPercent.Font = new System.Drawing.Font("Palatino Linotype", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnUserCtrPercent.ForeColor = System.Drawing.Color.White;
-            this.btnUserCtrPercent.Image = ((System.Drawing.Image)(resources.GetObject("btnUserCtrPercent.Image")));
-            this.btnUserCtrPercent.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUserCtrPercent.Location = new System.Drawing.Point(179, 195);
-            this.btnUserCtrPercent.Name = "btnUserCtrPercent";
-            this.btnUserCtrPercent.Size = new System.Drawing.Size(55, 35);
-            this.btnUserCtrPercent.TabIndex = 6;
-            this.btnUserCtrPercent.Text = "00";
-            this.btnUserCtrPercent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUserCtrPercent.UseVisualStyleBackColor = false;
+            this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Separator1.Location = new System.Drawing.Point(16, 236);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(223, 19);
+            this.guna2Separator1.TabIndex = 7;
             // 
             // PosSP
             // 
@@ -141,8 +153,6 @@
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Name = "PosSP";
             this.Size = new System.Drawing.Size(250, 413);
-            //this.MouseEnter += new System.EventHandler(this.PosSP_MouseEnter);
-            //this.MouseLeave += new System.EventHandler(this.PosSP_MouseLeave);
             this.guna2ShadowPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picsp)).EndInit();
             this.ResumeLayout(false);
@@ -157,5 +167,6 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private System.Windows.Forms.Label txtgiakm;
         public System.Windows.Forms.Button btnUserCtrPercent;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
     }
 }

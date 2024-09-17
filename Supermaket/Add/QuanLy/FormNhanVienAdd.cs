@@ -45,7 +45,7 @@ namespace Supermaket.Model
                     }
                     else
                     {
-                        string sql = "INSERT INTO NHANVIEN (HOVATEN, TAIKHOAN,MATKHAU, DIACHI,GIOITINH,NGAYSINH,SDT,EMAIL,MACV,TRANGTHAI) VALUES (@HOVATEN, @TAIKHOAN,@MATKHAU, @DIACHI,@GIOITINH,@NGAYSINH,@SDT,@EMAIL,@MACV,@TRANGTHAI)";
+                        string sql = "INSERT INTO NHANVIEN (HOVATEN, TAIKHOAN,MATKHAU, DIACHI,GIOITINH,NGAYSINH,SĐT,EMAIL,MACV,TRANGTHAI) VALUES (@HOVATEN, @TAIKHOAN,@MATKHAU, @DIACHI,@GIOITINH,@NGAYSINH,@SDT,@EMAIL,@MACV,@TRANGTHAI)";
                         SqlCommand cmd = new SqlCommand(sql, connection);
                         cmd.Parameters.AddWithValue("@HOVATEN", txtHoTennv.Text);
                         cmd.Parameters.AddWithValue("@TAIKHOAN", txtTK.Text);
@@ -99,7 +99,7 @@ namespace Supermaket.Model
                     }
                     else 
                     {
-                        string sql = "UPDATE NHANVIEN SET HOVATEN = @HOVATEN, TAIKHOAN=@TAIKHOAN,MATKHAU=@MATKHAU, DIACHI=@DIACHI,GIOITINH=@GIOITINH,NGAYSINH=@NGAYSINH,SDT=@SDT,EMAIL=@EMAIL,MACV=@MACV WHERE MANV = @MANV";
+                        string sql = "UPDATE NHANVIEN SET HOVATEN = @HOVATEN, TAIKHOAN=@TAIKHOAN,MATKHAU=@MATKHAU, DIACHI=@DIACHI,GIOITINH=@GIOITINH,NGAYSINH=@NGAYSINH,SĐT=@SDT,EMAIL=@EMAIL,MACV=@MACV WHERE MANV = @MANV";
                         using (SqlCommand cmd = new SqlCommand(sql, connection))
                         {
                             cmd.Parameters.AddWithValue("@MANV", id);
@@ -202,7 +202,7 @@ namespace Supermaket.Model
             }
             if (id == 0)
             {
-                if (CheckDuLieu.CheckSDT(txtSDTnv.Text, "SELECT SDT FROM NHANVIEN") == false)
+                if (CheckDuLieu.CheckSDT(txtSDTnv.Text, "SELECT SĐT FROM NHANVIEN") == false)
                 {
                     MessageBox.Show("Số điện thoại đã có vui lòng nhập lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtSDTnv.ResetText();
@@ -277,7 +277,7 @@ namespace Supermaket.Model
             {
                 if (sdt != txtSDTnv.Text)
                 {
-                    if (CheckDuLieu.CheckSDT(txtSDTnv.Text, "SELECT SDT FROM NHANVIEN") == false)
+                    if (CheckDuLieu.CheckSDT(txtSDTnv.Text, "SELECT SĐT FROM NHANVIEN") == false)
                     {
                         MessageBox.Show("Số điện thoại đã có vui lòng nhập lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         txtSDTnv.Text = sdt.ToString();

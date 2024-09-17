@@ -242,3 +242,5 @@ E:\Supermaket\Supermaket\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 E:\Supermaket\Supermaket\bin\Debug\CrystalDecisions.ReportSource.dll
 E:\Supermaket\Supermaket\bin\Debug\CrystalDecisions.Shared.dll
 E:\Supermaket\Supermaket\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\Supermaket\Supermaket\obj\Debug\Supermaket.View.ThongBao.FormThongBao.resources
+E:\Supermaket\Supermaket\obj\Debug\Supermaket.View.ThongBao.UserTB.resources

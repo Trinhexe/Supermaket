@@ -20,9 +20,9 @@ namespace Supermaket.View
                 connection.Open();
             string sql = @"select ROW_NUMBER() OVER (ORDER BY HOVATEN) AS 'STT',HOVATEN,TAIKHOAN,MATKHAU, NGAYSINH,
                         (CASE
-                        WHEN(GIOITINH =1) THEN N'Nam' 
+                        WHEN(GIOITINH = 1) THEN N'Nam' 
                         WHEN(GIOITINH = 0) THEN N'Nữ'
-                        end)as Phai, DIACHI,EMAIL, SDT, TENCV,MANV
+                        end)as Phai, DIACHI,EMAIL, SĐT, TENCV,MANV
                         from NHANVIEN INNER JOIN CHUCVU ON CHUCVU.MACV = NHANVIEN.MACV
                         WHERE HOVATEN LIKE 
                         N'%" + txtTk.Text + "%'" +
@@ -77,8 +77,8 @@ namespace Supermaket.View
                 themnv.ckNu.Checked = true;
             }    
             themnv.txtDiaChinv.Text = data.CurrentRow.Cells["DIACHI"].Value.ToString();
-            themnv.txtSDTnv.Text = data.CurrentRow.Cells["SDT"].Value.ToString();
-            themnv.sdt = data.CurrentRow.Cells["SDT"].Value.ToString();
+            themnv.txtSDTnv.Text = data.CurrentRow.Cells["SĐT"].Value.ToString();
+            themnv.sdt = data.CurrentRow.Cells["SĐT"].Value.ToString();
             themnv.txtgmailnv.Text = data.CurrentRow.Cells["email"].Value.ToString();
             themnv.gmail = data.CurrentRow.Cells["email"].Value.ToString();
             themnv.cbxChucVu.Text = data.CurrentRow.Cells["TENCV"].Value.ToString();

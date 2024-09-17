@@ -790,13 +790,11 @@ namespace Supermaket.ReportBaoCao {
             
             private global::System.Data.DataColumn columnHoVaTen;
             
-            private global::System.Data.DataColumn columnSDT;
+            private global::System.Data.DataColumn columnSĐT;
             
             private global::System.Data.DataColumn columnTenNCC;
             
             private global::System.Data.DataColumn columnDiaChi;
-            
-            private global::System.Data.DataColumn columnExpr1;
             
             private global::System.Data.DataColumn columnTenSP;
             
@@ -919,9 +917,9 @@ namespace Supermaket.ReportBaoCao {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn SDTColumn {
+            public global::System.Data.DataColumn SĐTColumn {
                 get {
-                    return this.columnSDT;
+                    return this.columnSĐT;
                 }
             }
             
@@ -938,14 +936,6 @@ namespace Supermaket.ReportBaoCao {
             public global::System.Data.DataColumn DiaChiColumn {
                 get {
                     return this.columnDiaChi;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Expr1Column {
-                get {
-                    return this.columnExpr1;
                 }
             }
             
@@ -1010,23 +1000,7 @@ namespace Supermaket.ReportBaoCao {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public DataTable2Row AddDataTable2Row(
-                        int MaNV, 
-                        System.DateTime NgayNhap, 
-                        double TongTien, 
-                        int IDSP, 
-                        double GiaNH, 
-                        int SoLuong, 
-                        double ThanhTien, 
-                        string TenDM, 
-                        string HoVaTen, 
-                        string SDT, 
-                        string TenNCC, 
-                        string DiaChi, 
-                        string Expr1, 
-                        string TenSP, 
-                        System.DateTime NgaySX, 
-                        System.DateTime NgayHH) {
+            public DataTable2Row AddDataTable2Row(int MaNV, System.DateTime NgayNhap, double TongTien, int IDSP, double GiaNH, int SoLuong, double ThanhTien, string TenDM, string HoVaTen, string SĐT, string TenNCC, string DiaChi, string TenSP, System.DateTime NgaySX, System.DateTime NgayHH) {
                 DataTable2Row rowDataTable2Row = ((DataTable2Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1039,10 +1013,9 @@ namespace Supermaket.ReportBaoCao {
                         ThanhTien,
                         TenDM,
                         HoVaTen,
-                        SDT,
+                        SĐT,
                         TenNCC,
                         DiaChi,
-                        Expr1,
                         TenSP,
                         NgaySX,
                         NgayHH};
@@ -1078,10 +1051,9 @@ namespace Supermaket.ReportBaoCao {
                 this.columnThanhTien = base.Columns["ThanhTien"];
                 this.columnTenDM = base.Columns["TenDM"];
                 this.columnHoVaTen = base.Columns["HoVaTen"];
-                this.columnSDT = base.Columns["SDT"];
+                this.columnSĐT = base.Columns["SĐT"];
                 this.columnTenNCC = base.Columns["TenNCC"];
                 this.columnDiaChi = base.Columns["DiaChi"];
-                this.columnExpr1 = base.Columns["Expr1"];
                 this.columnTenSP = base.Columns["TenSP"];
                 this.columnNgaySX = base.Columns["NgaySX"];
                 this.columnNgayHH = base.Columns["NgayHH"];
@@ -1110,14 +1082,12 @@ namespace Supermaket.ReportBaoCao {
                 base.Columns.Add(this.columnTenDM);
                 this.columnHoVaTen = new global::System.Data.DataColumn("HoVaTen", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnHoVaTen);
-                this.columnSDT = new global::System.Data.DataColumn("SDT", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSDT);
+                this.columnSĐT = new global::System.Data.DataColumn("SĐT", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSĐT);
                 this.columnTenNCC = new global::System.Data.DataColumn("TenNCC", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTenNCC);
                 this.columnDiaChi = new global::System.Data.DataColumn("DiaChi", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDiaChi);
-                this.columnExpr1 = new global::System.Data.DataColumn("Expr1", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnExpr1);
                 this.columnTenSP = new global::System.Data.DataColumn("TenSP", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTenSP);
                 this.columnNgaySX = new global::System.Data.DataColumn("NgaySX", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
@@ -1132,10 +1102,9 @@ namespace Supermaket.ReportBaoCao {
                 this.columnIDSP.AllowDBNull = false;
                 this.columnTenDM.MaxLength = 50;
                 this.columnHoVaTen.MaxLength = 255;
-                this.columnSDT.MaxLength = 11;
+                this.columnSĐT.MaxLength = 11;
                 this.columnTenNCC.MaxLength = 50;
                 this.columnDiaChi.MaxLength = 200;
-                this.columnExpr1.MaxLength = 20;
                 this.columnTenSP.MaxLength = 100;
             }
             
@@ -2154,17 +2123,17 @@ namespace Supermaket.ReportBaoCao {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string SDT {
+            public string SĐT {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable2.SDTColumn]));
+                        return ((string)(this[this.tableDataTable2.SĐTColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SDT\' in table \'DataTable2\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'SĐT\' in table \'DataTable2\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable2.SDTColumn] = value;
+                    this[this.tableDataTable2.SĐTColumn] = value;
                 }
             }
             
@@ -2197,22 +2166,6 @@ namespace Supermaket.ReportBaoCao {
                 }
                 set {
                     this[this.tableDataTable2.DiaChiColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Expr1 {
-                get {
-                    try {
-                        return ((string)(this[this.tableDataTable2.Expr1Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Expr1\' in table \'DataTable2\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDataTable2.Expr1Column] = value;
                 }
             }
             
@@ -2362,14 +2315,14 @@ namespace Supermaket.ReportBaoCao {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsSDTNull() {
-                return this.IsNull(this.tableDataTable2.SDTColumn);
+            public bool IsSĐTNull() {
+                return this.IsNull(this.tableDataTable2.SĐTColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetSDTNull() {
-                this[this.tableDataTable2.SDTColumn] = global::System.Convert.DBNull;
+            public void SetSĐTNull() {
+                this[this.tableDataTable2.SĐTColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2394,18 +2347,6 @@ namespace Supermaket.ReportBaoCao {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetDiaChiNull() {
                 this[this.tableDataTable2.DiaChiColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsExpr1Null() {
-                return this.IsNull(this.tableDataTable2.Expr1Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetExpr1Null() {
-                this[this.tableDataTable2.Expr1Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3154,10 +3095,9 @@ FROM            CTHOADON INNER JOIN
             tableMapping.ColumnMappings.Add("ThanhTien", "ThanhTien");
             tableMapping.ColumnMappings.Add("TenDM", "TenDM");
             tableMapping.ColumnMappings.Add("HoVaTen", "HoVaTen");
-            tableMapping.ColumnMappings.Add("SDT", "SDT");
+            tableMapping.ColumnMappings.Add("SDT", "SĐT");
             tableMapping.ColumnMappings.Add("TenNCC", "TenNCC");
             tableMapping.ColumnMappings.Add("DiaChi", "DiaChi");
-            tableMapping.ColumnMappings.Add("Expr1", "Expr1");
             tableMapping.ColumnMappings.Add("TenSP", "TenSP");
             tableMapping.ColumnMappings.Add("NgaySX", "NgaySX");
             tableMapping.ColumnMappings.Add("NgayHH", "NgayHH");

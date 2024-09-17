@@ -26,7 +26,7 @@ namespace Supermaket.View.Kho
                         from SANPHAM INNER JOIN DANHMUC ON SANPHAM.MADM = DANHMUC.MADM
                                     INNER JOIN NHACUNGCAP ON NHACUNGCAP.MANCC = SANPHAM.MANCC 
                         WHERE TENSP LIKE 
-                        N'%" + txtTk.Text + "%'" +
+                        N'%" + txtTk.Text + "%' OR IDSP LIKE '%"+txtTk.Text+"%'" +
                         "AND SANPHAM.TRANGTHAI = 1";
                         
             SqlDataAdapter ad = new SqlDataAdapter(sql, connection);

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Supermaket.View.ThongBao;
 
 namespace Supermaket
 {
@@ -117,6 +118,12 @@ namespace Supermaket
                 login.Show();
                 this.Hide();
             }
+        }
+        
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            FormThongBao thongBao = new FormThongBao();
+            thongBao.ShowDialog();
         }
     }
 }

@@ -25,7 +25,7 @@ namespace Supermaket.View
                         from SANPHAM LEFT JOIN DANHMUC ON SANPHAM.MADM = DANHMUC.MADM
                                     LEFT JOIN NHACUNGCAP ON NHACUNGCAP.MANCC = SANPHAM.MANCC 
                                     LEFT JOIN KHUYENMAI ON SANPHAM.MAKM = KHUYENMAI.MAKM
-                        WHERE (TENSP LIKE N'%" + txtTk.Text + "%' OR TENDM LIKE N'%" + txtTk.Text + "%')" +
+                        WHERE (TENSP LIKE N'%" + txtTk.Text + "%' OR IDSP LIKE N'%" + txtTk.Text + "%')" +
                         "AND SANPHAM.TRANGTHAI = 1" +
                         "AND SOLUONGTON > 0";
             SqlDataAdapter ad = new SqlDataAdapter(sql, connection);
