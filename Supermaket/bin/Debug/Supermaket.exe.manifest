@@ -306,14 +306,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Supermaket.exe" size="2299832">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Supermaket.exe" size="2300344">
       <assemblyIdentity name="Supermaket" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xkMyHpwBXNy/SCYPns/UkfSux+tDvHYS8FylWQd0Gd0=</dsig:DigestValue>
+        <dsig:DigestValue>igmzhMZWHil7mcNJYZzvBeGHtmVdPK4yzubBH65PQlE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

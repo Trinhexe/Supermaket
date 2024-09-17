@@ -55,7 +55,7 @@ namespace Supermaket.View.Kho
         }
         private void txtTk_TextChanged(object sender, EventArgs e)
         {
-            string dk = "NHANVIEN.HOVATEN LIKE N'%" + txtTk.Text + "%' OR MAXUATHANG LIKE '%" + txtTk.Text + "%' OR SĐT LIKE '%" + txtTk.Text + "%'";
+            string dk = "NHANVIEN.HOVATEN LIKE N'%" + txtTk.Text + "%' OR MAXUATHANG LIKE '%" + txtTk.Text + "%' OR NHANVIEN.SĐT LIKE '%" + txtTk.Text + "%'";
             LoadData(dk);
         }
 

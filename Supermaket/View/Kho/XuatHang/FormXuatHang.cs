@@ -27,8 +27,8 @@ namespace Supermaket.View.Kho
             string sql = @"select ROW_NUMBER() OVER (ORDER BY IDSP DESC) AS 'STT',TENSP,IDSP,SanPham.MoTa, TENNCC, TENDM, DONGIA,SOLUONGTON, NGAYSX, NGAYHH
                         from SANPHAM INNER JOIN DANHMUC ON SANPHAM.MADM = DANHMUC.MADM
                                     INNER JOIN NHACUNGCAP ON NHACUNGCAP.MANCC = SANPHAM.MANCC 
-                        WHERE TENSP LIKE 
-                        N'%" + txtTk.Text + "%'" +
+                        WHERE (TENSP LIKE 
+                        N'%" + txtTk.Text + "%' OR IDSP LIKE '%"+txtTk.Text+"%')" +
                         "AND SANPHAM.TRANGTHAI = 1 AND SOLUONGTON > 0";
             SqlDataAdapter ad = new SqlDataAdapter(sql, connection);
             DataTable dt = new DataTable();
