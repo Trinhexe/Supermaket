@@ -8,7 +8,7 @@ namespace Supermaket
 {
     public static class MainClass
     {
-        static string KN = "Data Source=.;Initial Catalog=SieuThi;Integrated Security=True;Encrypt=False";
+        static string KN = "Data Source=" + System.Windows.Forms.SystemInformation.ComputerName + ";Initial Catalog=Supermaket;Integrated Security=True";
         public static SqlConnection GetConnection()
         {
             return new SqlConnection(KN);

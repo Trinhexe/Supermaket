@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Supermaket\\",
+  "WorkspaceRootPath": "E:\\D21CTC1\\Supermaket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|e:\\supermaket\\supermaket\\view\\kho\\xuathang\\formxuathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|solutionrelative:supermaket\\view\\kho\\xuathang\\formxuathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|e:\\supermaket\\supermaket\\view\\kho\\xuathang\\formxuathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|solutionrelative:supermaket\\view\\kho\\xuathang\\formxuathang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|e:\\d21ctc1\\supermaket\\supermaket\\mainclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|solutionrelative:supermaket\\mainclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormXuatHang.cs",
-              "DocumentMoniker": "E:\\Supermaket\\Supermaket\\View\\Kho\\XuatHang\\FormXuatHang.cs",
-              "RelativeDocumentMoniker": "Supermaket\\View\\Kho\\XuatHang\\FormXuatHang.cs",
-              "ToolTip": "E:\\Supermaket\\Supermaket\\View\\Kho\\XuatHang\\FormXuatHang.cs",
-              "RelativeToolTip": "Supermaket\\View\\Kho\\XuatHang\\FormXuatHang.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Title": "MainClass.cs",
+              "DocumentMoniker": "E:\\D21CTC1\\Supermaket\\Supermaket\\MainClass.cs",
+              "RelativeDocumentMoniker": "Supermaket\\MainClass.cs",
+              "ToolTip": "E:\\D21CTC1\\Supermaket\\Supermaket\\MainClass.cs",
+              "RelativeToolTip": "Supermaket\\MainClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T17:37:54.362Z",
+              "WhenOpened": "2024-10-22T22:00:32.036Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormXuatHang.cs [Design]",
-              "DocumentMoniker": "E:\\Supermaket\\Supermaket\\View\\Kho\\XuatHang\\FormXuatHang.cs",
-              "RelativeDocumentMoniker": "Supermaket\\View\\Kho\\XuatHang\\FormXuatHang.cs",
-              "ToolTip": "E:\\Supermaket\\Supermaket\\View\\Kho\\XuatHang\\FormXuatHang.cs [Design]",
-              "RelativeToolTip": "Supermaket\\View\\Kho\\XuatHang\\FormXuatHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T17:37:52.62Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

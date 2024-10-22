@@ -8,7 +8,7 @@
         <beforeApplicationStartup />
       </update>
     </subscription>
-    <deploymentProvider codebase="http://lektrinh/Supermaket/Supermaket.application" />
+    <deploymentProvider codebase="http://ktrinh/Supermaket/Supermaket.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
@@ -21,7 +21,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>juLnrGcbhm7Lqne3bQLyn226JUgTnIga5wedR/7Ss/M=</dsig:DigestValue>
+        <dsig:DigestValue>DICx2UBhKc8bhWOOepI+fWD3lNWR/mMraMn6ZMPViAs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
