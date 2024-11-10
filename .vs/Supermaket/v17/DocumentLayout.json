@@ -1,37 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\D21CTC1\\Supermaket\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|e:\\d21ctc1\\supermaket\\supermaket\\mainclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|solutionrelative:supermaket\\mainclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainClass.cs",
-              "DocumentMoniker": "E:\\D21CTC1\\Supermaket\\Supermaket\\MainClass.cs",
-              "RelativeDocumentMoniker": "Supermaket\\MainClass.cs",
-              "ToolTip": "E:\\D21CTC1\\Supermaket\\Supermaket\\MainClass.cs",
-              "RelativeToolTip": "Supermaket\\MainClass.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T22:00:32.036Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

@@ -36,7 +36,6 @@
             this.btnUserCtrPercent = new System.Windows.Forms.Button();
             this.txtgiakm = new System.Windows.Forms.Label();
             this.picsp = new System.Windows.Forms.PictureBox();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picsp)).BeginInit();
             this.SuspendLayout();
@@ -82,7 +81,6 @@
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Controls.Add(this.guna2Separator1);
             this.guna2ShadowPanel1.Controls.Add(this.btnUserCtrPercent);
             this.guna2ShadowPanel1.Controls.Add(this.txtgiakm);
             this.guna2ShadowPanel1.Controls.Add(this.picsp);
@@ -135,16 +133,6 @@
             this.picsp.TabStop = false;
             this.picsp.Click += new System.EventHandler(this.picsp_Click);
             // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Separator1.Location = new System.Drawing.Point(16, 236);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(223, 19);
-            this.guna2Separator1.TabIndex = 7;
-            // 
             // PosSP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -152,7 +140,7 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Name = "PosSP";
-            this.Size = new System.Drawing.Size(250, 413);
+            this.Size = new System.Drawing.Size(250, 412);
             this.guna2ShadowPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picsp)).EndInit();
             this.ResumeLayout(false);
@@ -167,6 +155,5 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private System.Windows.Forms.Label txtgiakm;
         public System.Windows.Forms.Button btnUserCtrPercent;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
     }
 }

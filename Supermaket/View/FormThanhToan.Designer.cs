@@ -448,7 +448,6 @@
             // dtpNgayLHD
             // 
             this.dtpNgayLHD.CustomFormat = "dd-MM-yyyy";
-            this.dtpNgayLHD.Enabled = false;
             this.dtpNgayLHD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgayLHD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgayLHD.Location = new System.Drawing.Point(17, 376);
