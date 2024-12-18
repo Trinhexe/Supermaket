@@ -36,8 +36,8 @@ namespace Supermaket
         {
             bool ktr = false;
             string sql = "SELECT MANV,TENCV,HOVATEN FROM NHANVIEN INNER JOIN CHUCVU ON NHANVIEN.MACV = CHUCVU.MACV " +
-                         "WHERE (TAIKHOAN = '"+tk+"' and MATKHAU = '"+mk+"') AND TRANGTHAI = 1";
-            SqlCommand cmd = new SqlCommand(sql,MainClass.GetConnection());
+                         "WHERE (TAIKHOAN = '" + tk + "' and MATKHAU = '" + mk + "') AND TRANGTHAI = 1";
+            SqlCommand cmd = new SqlCommand(sql, MainClass.GetConnection());
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
             da.Fill(ds);
@@ -47,7 +47,7 @@ namespace Supermaket
                 chucvu = ds.Tables[0].Rows[0]["TENCV"].ToString();
                 manv = int.Parse(ds.Tables[0].Rows[0]["MaNV"].ToString());
                 ktr = true;
-            }    
+            }
             return ktr;
         }
         public static float DoanhThuNgay()

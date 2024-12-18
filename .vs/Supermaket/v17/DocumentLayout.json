@@ -1,12 +1,68 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\D21CTC1\\Supermaket\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|e:\\d21ctc1\\supermaket\\supermaket\\mainclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|solutionrelative:supermaket\\mainclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|E:\\D21CTC1\\Supermaket\\supermaket\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|solutionrelative:supermaket\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|E:\\D21CTC1\\Supermaket\\supermaket\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EEA6A5BF-32CB-4C49-B97E-5640FAB26C94}|Supermaket\\Supermaket.csproj|solutionrelative:supermaket\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "E:\\D21CTC1\\Supermaket\\Supermaket\\FormLogin.cs",
+              "RelativeDocumentMoniker": "Supermaket\\FormLogin.cs",
+              "ToolTip": "E:\\D21CTC1\\Supermaket\\Supermaket\\FormLogin.cs",
+              "RelativeToolTip": "Supermaket\\FormLogin.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwBYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T08:37:17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormLogin.cs [Design]",
+              "DocumentMoniker": "E:\\D21CTC1\\Supermaket\\Supermaket\\FormLogin.cs",
+              "RelativeDocumentMoniker": "Supermaket\\FormLogin.cs",
+              "ToolTip": "E:\\D21CTC1\\Supermaket\\Supermaket\\FormLogin.cs [Design]",
+              "RelativeToolTip": "Supermaket\\FormLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T08:37:16.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainClass.cs",
+              "DocumentMoniker": "E:\\D21CTC1\\Supermaket\\Supermaket\\MainClass.cs",
+              "RelativeDocumentMoniker": "Supermaket\\MainClass.cs",
+              "ToolTip": "E:\\D21CTC1\\Supermaket\\Supermaket\\MainClass.cs",
+              "RelativeToolTip": "Supermaket\\MainClass.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA5wCgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T08:32:15.105Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
